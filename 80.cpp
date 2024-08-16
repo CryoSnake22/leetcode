@@ -9,9 +9,9 @@ public:
     unordered_map<int, int> map;
     int j = 0;
     int count = 0;
-    int recnum;
+    int recent;
     for (int i = 0; i < nums.size(); i++) {
-      if (recnum != nums[i] && i != 0) {
+      if (recent != nums[i] && i != 0) {
         count = 0;
       }
       count++;
@@ -20,7 +20,7 @@ public:
       }
       nums[j] = nums[i];
       j++;
-      recnum = nums[i];
+      recent = nums[i];
     }
     return j;
   }
