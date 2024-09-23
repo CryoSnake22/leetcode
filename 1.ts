@@ -7,4 +7,5 @@ function twoSum(nums: number[], target: number): number[] {
     }
     dict[element] = i;
   }
+  return [];
 }
